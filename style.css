@@ -1,0 +1,156 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+/* defining variables */
+
+:root {
+  --defaultpadding: 3rem;
+  --brown: #2b2922;
+  --lightbrown: #a8a6a3;
+  --light: #f1f0ef;
+  --yellow: #a08e36;
+  --yellow-brown: #39372d;
+}
+
+body {
+  background-color: #333129;
+}
+/* ------- Navbar design --------- */
+#header {
+  color: #fff;
+}
+
+nav {
+  /* padding: 2rem var(--defaultpadding); */
+  padding: 30px 130px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.brand {
+  flex: 1;
+}
+
+.brand img {
+  height: 35px;
+  filter: invert(100%);
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+}
+
+.nav-item {
+  list-style: none;
+  padding: 0 20px;
+  color: #88867b;
+  font-weight: 500;
+  cursor: pointer;
+}
+.active {
+  color: #fff;
+  font-weight: 600;
+}
+
+.nav-item:hover {
+  color: #a08e36;
+}
+
+.nav-btn {
+  padding: 15px 30px;
+  border-radius: 9px;
+  background-color: transparent;
+  border: 1px solid  #a08e36;
+  color: #a08e36;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  margin-left: 15px;
+  cursor: pointer;
+}
+
+.nav-btn:hover {
+  background-color:  #a08e36;
+  color: var(--light);
+  transition: 0.3s;
+}
+/* ---- content ---- */
+
+.content {
+  padding: 25px 130px;
+  display: flex;
+  align-items: center;
+}
+
+.heading > h1 {
+  font-size: 70px;
+  text-transform: capitalize;
+  width: 70%;
+}
+
+.para {
+  width: 40%;
+}
+
+.para > p {
+  font-size: 19px;
+  color: #88867b;
+}
+
+.justice {
+  background: url(../images/justice.jpg);
+  background-position: center;
+  background-size: cover;
+  /* background-size: 100% 100%; */
+  width: 100%;
+  height: 500px;
+  background-repeat: no-repeat;
+}
+
+/* ------- To swipe ------- */
+.swipe {
+  display: flex;
+  float: right;
+}
+.left {
+  background-color:  #39372d;
+  padding: 30px;
+}
+
+.right {
+  padding: 30px;
+  background-color: #a08e36;
+}
+
+.circle {
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  height: 35px;
+  width: 30px;
+}
+
+.left-circle {
+  border: 1px solid #a08e36;
+}
+.left-circle > i {
+  color: #a08e36;
+}
+.right-circle {
+  border: 1px solid  #f1f0ef;
+}
+
+i {
+  color:  #f1f0ef;
+  font-size: 30px;
+}
